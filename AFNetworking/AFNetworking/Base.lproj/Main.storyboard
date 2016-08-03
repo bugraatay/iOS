@@ -18,6 +18,12 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <items>
                                 <navigationItem title="Kişiler" id="vuh-0O-bhc">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="trash" id="Ghz-L5-Otj">
+                                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="btnDelete:" destination="uv7-Sx-a9x" id="W0m-eI-byH"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem key="rightBarButtonItem" systemItem="add" id="GRx-Td-rW6">
                                         <connections>
                                             <segue destination="9Dh-KJ-OXr" kind="push" identifier="addSegue" id="VPV-OG-w7Z"/>
@@ -60,9 +66,13 @@
                             <outlet property="delegate" destination="uv7-Sx-a9x" id="yyW-B1-8ob"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="8ym-79-KT7"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DwF-fq-Vhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,6 +116,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="PDT-rD-q9V"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="txtFirstName" destination="V7t-mM-hz4" id="PRz-gX-tmw"/>
                         <outlet property="txtLastName" destination="q0s-Go-DJa" id="NiH-9u-GDs"/>
@@ -134,6 +145,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VPV-OG-w7Z"/>
+        <segue reference="aql-Z3-WzM"/>
     </inferredMetricsTieBreakers>
 </document>

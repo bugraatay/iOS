@@ -16,9 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtLastName;
 @property (weak, nonatomic) IBOutlet UITextField *txtMail;
 - (IBAction)btnSave:(id)sender;
-@property (strong, nonatomic) NSURL *baseURL;
-@property (strong, nonatomic) NSString *sourceURL;
-@property (strong, nonatomic) NSMutableDictionary *dicPerson;
 @property (strong, nonatomic) NSMutableDictionary *sendedPerson;
+//@property (strong, nonatomic) NSMutableArray *sendedPerson;
 
 @end

@@ -12,8 +12,9 @@
 @interface Contacts_TableViewController : UITableViewController
 
 @property (strong, nonatomic) NSString *sourceURL;
-@property (strong, nonatomic) NSMutableDictionary *people;
-@property (strong, nonatomic) NSMutableDictionary *dicPerson;
 @property (strong, nonatomic) NSString *personId;
-@property (strong, nonatomic) NSString *dicPersonKey;
+@property (strong, nonatomic) NSMutableArray *sendedPerson;
+@property (strong, nonatomic) NSMutableArray *people;
+- (IBAction)btnDelete:(id)sender;
+
 @end
