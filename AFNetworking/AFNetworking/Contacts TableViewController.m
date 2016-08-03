@@ -140,7 +140,7 @@
     [dataTask resume];
 }
 -(void) yenile{
-    [self.tableView reloadData];
+    [self getContacts];
     [self.refreshControl endRefreshing];
 }
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
