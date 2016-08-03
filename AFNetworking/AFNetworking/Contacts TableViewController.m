@@ -18,7 +18,7 @@
     _sendedPerson = [NSMutableArray array];
     _people = [NSMutableArray array];
     _sourceURL = @"https://api.myjson.com/bins//52dgv";
-    
+    [self getContacts];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(receiveNotification:)
                                                  name:@"personSended" object:nil];
     
