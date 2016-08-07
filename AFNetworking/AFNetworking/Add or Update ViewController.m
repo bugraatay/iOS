@@ -27,7 +27,6 @@
         _txtFirstName.text = [[_sendedPerson valueForKey:@"kisi" ] valueForKey:@"firstName"];
          _txtLastName.text = [[_sendedPerson valueForKey:@"kisi" ]  valueForKey:@"lastName"];
          _txtMail.text = [[_sendedPerson valueForKey:@"kisi" ]  valueForKey:@"mail"];
-         NSLog(@"%@", _idsi);
      }
      
 }

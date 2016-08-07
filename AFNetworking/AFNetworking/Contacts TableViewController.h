@@ -17,4 +17,10 @@
 @property (strong, nonatomic) NSMutableArray *people;
 - (IBAction)btnDelete:(id)sender;
 
+-(void) postOrPutDataWithRequestMethod:(NSString *)requestMethod
+                  destinationURLString:(NSString *)destinationURL
+                                  data:(NSMutableArray *)data;
+-(void) getDataFromURLString:(NSString *)sourceURL;
+
+
 @end
